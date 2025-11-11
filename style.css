@@ -1,0 +1,111 @@
+/* Fonts */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe6f0; /* soft pink */
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #ffb6c1, #ffe6f0);
+}
+
+header h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em;
+  color: #b30059; /* dark pink/purple */
+}
+
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.love-letter p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.messages h2,
+.gallery h2 {
+  text-align: center;
+  color: #990033; /* deep pink */
+  margin-bottom: 20px;
+}
+
+.note {
+  background-color: #fff0f5; /* very light pink */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+  width: 180px;
+  text-align: center;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffb6c1;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  section {
+    padding: 0 15px;
+  }
+
+  .note {
+    font-size: 1em;
+    padding: 12px;
+  }
+
+  .gallery {
+    gap: 15px;
+  }
+
+  .photo {
+    width: 45%; /* two photos per row on small screens */
+  }
+
+  .photo img {
+    border-radius: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .photo {
+    width: 100%; /* one photo per row */
+  }
+}
